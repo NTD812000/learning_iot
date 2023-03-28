@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login page </title>
+        <style> 
+            body {
+                background-image: linear-gradient(#867BFF, #11101F);
+            }
+            .card {
+                font-family: monospace;
+                background-color: #2D294B;
+                height: 340px;
+                width: 400px;
+                border-radius: 4%;
+                position: flex;
+                margin: auto;
+                margin-top: 10%;
+                box-shadow: 0px 0px 30px #8174FA;
+                margin-bottom: 1000px;
+            }
+            .card-title {
+                font-size: 25px;
+                color: white;
+                padding-top: 20px;
+                padding-bottom: 40px;
+                text-align: center;
+            }
+            .card-input {
+                padding-left: 30px;
+                padding-right: 40px;
+                margin-bottom: 20px;
+            }
+            .card-input > div {
+                color: #7F78B6;
+                font-size: 14px;
+                padding-bottom: 10px;
+            }
+            .card-input > input {
+                color: white;
+                width: 100%;
+                font-size: 14px;
+                /* padding-bottom: 10px; */
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid white;
+            }
+            .card-button {
+                margin-left: 30px;
+                margin-right: 40px;
+                margin-top: 40px;
+                width: 160px;
+                height: 40px;
+                background-color: #8174FA;
+                color: white;
+                border-radius: 10px;
+                border: 0;
+            }
+            .card-button:hover {
+                box-shadow: 0px 0px 20px #8174FA;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="card"> 
+            <div class="card-title"> Administrativo </div>
+            <div class="card-input">
+                <div> Email </div>
+                <input id="email">
+            </div>
+            <div class="card-input">
+                <div> Senha </div>
+                <input type="password" id="password">
+            </div>
+            <input id="submit-button" class="card-button" type="button" value="ACESSAR">
+        </div>
+
+        
+        <script> 
+            function submit() {
+                var email_value = document.getElementById("email").value;
+                var password_value = document.getElementById("password").value;
+
+                alert("Email: " + email_value + "\n" + "Password: " + password_value);
+            }
+            document.getElementById("submit-button").onclick = submit
+        </script> 
+
+    </body>
+</html>
